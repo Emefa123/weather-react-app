@@ -24,13 +24,13 @@ export default function App() {
           >
             open-sourced on GitHub
           </a>{" "}
-          and hosted on{" "}
+          and {""}
           <a
             href="https://cheery-sprinkles-75d848.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Netlify
+            hosted on Netlify
           </a>
         </footer>
       </div>
