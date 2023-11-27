@@ -23,11 +23,14 @@ export default function WeatherForecast(props) {
       </div>
     );
   } else {
-    let apiKey = "5aac6d0188c6f17d6d2bbe6591b6fef0";
-    let longitude = props.coordinates.lon;
-    let latitude = props.coordinates.lat;
-    let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    let apiKey = "bc5ca568ee2d7c71357ca430a3ff8705";
+    let longitude = props.coordinates.longitude;
+    let latitude = props.coordinates.latitude;
+    let apiURL = `https://api.shecodes.io/weather/v1/forecast?lat=${latitude}&lon=${longitude}&key=${apiKey}&
+    units=metric`;
+
     axios.get(apiURL).then(handleResponse);
+
     return null;
   }
 }
