@@ -47,3 +47,10 @@
   line-height: 1;
   top: -34px;
 }
+
+.WeatherInfo h1 {
+  color: #1d1e22ff;
+}
+.App {
+  background: #f9ecff;
+}
